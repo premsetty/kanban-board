@@ -1,0 +1,24 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header h1{
+    margin: 0;
+    font-weight: 600;
+}
+
+.Header button{
+    color: white;
+    background-color: #0060D1;
+    font-size: 1.3em;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.Header button:hover{
+    background-color: #004fa8;
+}

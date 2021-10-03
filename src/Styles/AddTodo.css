@@ -1,0 +1,96 @@
+.AddTodoContainer{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    backdrop-filter: brightness(0.65);
+}
+
+.AddTodo form{
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: clamp(450px, 45vw, 690px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#title, #desc{
+    width: clamp(410px, 40vw, 670px);
+    border: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+#desc{
+    height: 100px;
+    resize: none;
+}
+
+#title:focus, #desc:focus{
+    outline: none;
+    box-shadow: inset 3px 3px 7px rgb(202, 202, 202);
+}
+
+.AddTodo h3{
+    margin: 0px;
+}
+
+#NewTaskHeading{
+    text-align: center;
+    margin: 0px;
+    background-color: #0066FF;
+    width: clamp(450px, 45vw, 690px);
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    padding: 5px 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.AddTodo .AddTodoButtons{
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: clamp(450px, 45vw, 690px);
+}
+
+#AddTaskBtn, #CancelBtn{
+    border: none;
+    font-size: 18px;
+    width: 120px;
+    padding: 7px 0px;
+    border-radius: 9px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+#AddTaskBtn{
+    background-color: #0066FF;
+}
+
+#AddTaskBtn:hover{
+    background-color: #0044aa;
+}
+
+#CancelBtn{
+    background-color: #FF0000;
+}
+
+#CancelBtn:hover{
+    background-color: #a80000;
+}
+
+.AddTodo .FormElements{
+    margin: 10px 0px;
+    font-size: clamp(1rem, 1vw, 1.8rem);
+}
